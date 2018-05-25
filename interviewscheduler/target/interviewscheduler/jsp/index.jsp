@@ -31,14 +31,13 @@
 	<div id="Candidate">
 		<button class="candbutton" onclick="display(event, 'CreateCandidate')">CreateCandidate</button>
 		<button class="candbutton" onclick="display(event, 'UpdateCandidate')">UpdateCandidate</button>
-		<button class="candbutton" onclick="display(event, 'CandidateChooseSlot')">ChooseSlot</button>
 		<button class="candbutton" onclick="display(event, 'CandidateView')">View</button>
 	</div>
 
 
 	<div id="CreateInterviewer" class="tabcontent">
 		<h6>Interviewer Details</h6>
-		<form id="nkm">
+		<form>
 			<table>
 				<tbody>
 					<tr>
@@ -94,29 +93,27 @@
 			</table>
 		</form>
 	</div>
-	<div id="InterviewerView"></div>
+	<div id="InterviewerView">
+	
+	</div>
 	<div id="ChooseSlot" class="tabcontent">
 		<h6>ChooseSlot Interviewer Details</h6>
 		<form>
 			<table>
 				<tbody>
 					<tr>
-						<td>Interviewer Id :</td>
-						<td><select id="intSlotdropdown"></select></td>
-					</tr>
-					<tr>
-						<td>Interview Date :</td>
-						<td><input id="intSlotdate" type="date" name="date" max="2018-06-30"	min="2018-05-25"><br></td>
+						<td>Interviewer Name :</td>
+						<td><input type="text" /></td>
 					</tr>
 					<tr>
 						<td>slot :</td>
-						<td><select id="intSlot">
-								<option>SLOT1</option>
-								<option>SLOT2</option>
+						<td><select>
+								<option>S1</option>
+								<option>S2</option>
 						</select></td>
 					</tr>
 					<tr>
-						<td><input id="interviewChooseSlot" type="submit" value="update" /></td>
+						<td><input type="submit" value="update" /></td>
 					</tr>
 				</tbody>
 			</table>
@@ -130,22 +127,22 @@
 				<tbody>
 					<tr>
 						<td>Name :</td>
-						<td><input id="canName" type="text" /></td>
-					</tr>
-					<tr>
-						<td>No Of Exp Years :</td>
-						<td><input id="canExpYears" type="text" /></td>
+						<td><input type="text" /></td>
 					</tr>
 					<tr>
 						<td>Email :</td>
-						<td><input id="canEmail" type="text" /></td>
+						<td><input type="text" /></td>
 					</tr>
 					<tr>
 						<td>Contact :</td>
-						<td><input id="canContact" type="text" /></td>
+						<td><input type="text" /></td>
 					</tr>
 					<tr>
-						<td><input id="candidateSave" type="submit" value="save" /></td>
+						<td>YearsOfExp :</td>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="save" /></td>
 					</tr>
 				</tbody>
 			</table>
@@ -168,31 +165,11 @@
 			</table>
 		</form>
 	</div>
-	<div id="CandidateView"></div>
-	<div id="CandidateChooseSlot" class="tabcontent">
-			<h6>Please choose a date for interview</h6>
-			<form>
-				<table>
-					<tbody>
-						<tr>
-							<td>Candidate Id :</td>
-							<td><select id="canSlotdropdown"></select></td>
-						</tr>
-						<tr>
-							<td>Interview Date :</td>
-							<td><input id="canSlotdate" type="date" name="date" max="2018-06-30"	min="2018-05-25"><br></td>
-						</tr>
-						<tr>
-							<td><input id="candidateChooseSlot" type="submit" value="update" /></td>
-						</tr>
-					</tbody>
-				</table>
-			</form>
-		</div>
-	<div id="Schedule" class="tabcontent">
-	  <table id="scheduleTable" border="1"></table>
-	 
+	<div id="CandidateView">
+	
 	</div>
+
+	<div id="Schedule" class="tabcontent"></div>
 
 
 
